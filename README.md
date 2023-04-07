@@ -1,3 +1,3 @@
 ```bash
-docker-compose up --build -d --scale app=2
+docker compose up --build -d --scale app=2
 ```

@@ -1,14 +1,12 @@
 from flask import Flask
+from flask import jsonify, request
 
 app = Flask(__name__)
-
-# Route for the default page
 
 
 @app.route("/")
 def home():
-    # Display message
-    return "<center><h3>Hello World!!!</h3></center>"
+    return jsonify({'ip': request.remote_addr}), 200
 
 
 if __name__ == '__main__':
